@@ -15,8 +15,9 @@ Első két for ciklusba kiszámolom az Y segédtömböt, utána a következő fo
 
 ## Tömb
 
-A párhuzamosság abból áll hogy random elemeket adok a tömbhöz.
-Itt inkább a tömb megvalósításán van a hangsúly.
+A program létrehoz egy tömböt. Megkeresi az összes prímszámot nem párhuzamosan.
+A tömböt annyi részre osztja ahány szálunk van és úgy hasonlítja össze őket párhuzamosan, hogy prímszámok-e.
+A végén összeadja a taskban tárolt prímszám előfordulásokat.
 
 
 ## Java
@@ -26,5 +27,3 @@ Az fog lefutni párhuzamosan ami a run metódusban van.
 Elsőször egy osztályt kell példányosítani utána egy thread osztályt, aminek a konstruktának a paramétere az előző osztály.
 
 Start-tal elkezdjük, a join-nal pedig bevárják egymást és csak utána folytatódhatnak a további kódok.
-
-Először 40, majd 50 számot összead párhuzamosan és a végén összeadja a kettőnek az összegét.
